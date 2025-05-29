@@ -35,6 +35,12 @@ export default function App() {
         </SwiperSlide>
         <SwiperSlide>
           <img className='w-full h-[90vh] rounded-[20px] object-cover' src="https://umino-demo.myshopify.com/cdn/shop/files/slide-furinture-2.jpg?v=1682649036&width=2000" />
+          <div className="text absolute inset-0  text-center flex  flex-col items-center justify-center">
+<h1 className='text-[14px] font-semibold text-white mb-[15px]'>KITCHEN TOOLS</h1>
+<h2 className='text-[90px] text-white mb-[15px]'>Pendant Light</h2>
+<p className='text-[16px] text-white'>Discount 50% On Products & Free Shipping.</p>
+<button className='mt-[50px] py-[17px] px-[57px] bg-white rounded-[50px] text-[12px] font-[jost] font-semibold text-[#111111]'>EXPLORE NOW</button>
+</div>
         </SwiperSlide>
       </Swiper>
     </>
