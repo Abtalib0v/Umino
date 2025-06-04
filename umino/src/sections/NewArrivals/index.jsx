@@ -1,6 +1,5 @@
 import React from 'react'
 import BasicTabs from '../../shared/MUITab'
-import CardSlider from '../../shared/CardSlider'
 
 const NewArrivals = () => {
   return (

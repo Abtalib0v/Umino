@@ -41,8 +41,7 @@ export default function Footer() {
 
             </div>
             <div className="icons border-[1px] inline-block p-2 border-[#999999] rounded-full">
-              <FaXTwitter
-r fill="#999999"/>
+              <FaXTwitter fill="#999999"/>
 
             </div>
             <div className="icons border-[1px] inline-block p-2 border-[#999999] rounded-full">

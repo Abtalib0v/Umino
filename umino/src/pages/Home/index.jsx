@@ -7,6 +7,7 @@ import TrendingGrid from '../../sections/TrendingGrid'
 import ComparisonImage from '../../sections/ComparisonImages'
 import AboutSection from '../../sections/AboutSection'
 import TheBlog from '../../sections/TheBlog'
+import AnchorTemporaryDrawer from '../../shared/ShearchBtn'
 
 const HomePage = () => {
   return (
@@ -18,6 +19,7 @@ const HomePage = () => {
         <ComparisonImage/>
         <AboutSection/>
         <TheBlog/>
+        <AnchorTemporaryDrawer/>
     
     </div>
   )

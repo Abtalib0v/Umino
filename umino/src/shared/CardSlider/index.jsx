@@ -5,18 +5,19 @@ import "swiper/css";
 import { useQuery } from "@tanstack/react-query";
 import Cards from "../Cards";
 import { Navigation } from "swiper/modules";
+import { GetApiService } from "../../services/api";
 
 export default function CardSlider() {
   const { data } = useQuery({
-    queryKey: ["product"],
-    queryFn: () =>
-      fetch("http://localhost:3000/product").then((res) => res.json()),
+    queryKey: ["default-card"],
+    queryFn: () => GetApiService("default-cards?populate=*"),
   });
+  console.log(data);
   return (
     <Swiper
     navigation={true} modules={[Navigation]}
       spaceBetween={20}
-      slidesPerView={4}
+      slidesPerView={"auto"}
       autoHeight={true}
     //   loop= {true}
       breakpoints={{
@@ -44,14 +45,14 @@ export default function CardSlider() {
     >
       {" "}
       
-        {data?.map((product) => (
-          <SwiperSlide key={product.id}>
+        {data?.data.map((item,idx) => (
+          <SwiperSlide key={idx}>
             <Cards
-              image={product.image}
-              hovimage={product.hovimage}
-              text={product.text}
-              price={product.price}
-              disprice={product.disprice}
+              image={`http://localhost:1337${item.image.url}`}
+              hovimages={`http://localhost:1337${item.hovimages.url}`}
+              text={item?.text}
+              price={item?.price}
+              disprice={item?.disprice}
             />
           </SwiperSlide>
         ))}

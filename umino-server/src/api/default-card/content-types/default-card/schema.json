@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "default_cards",
+  "info": {
+    "singularName": "default-card",
+    "pluralName": "default-cards",
+    "displayName": "default-card"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "hovimages": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "text": {
+      "type": "string"
+    },
+    "price": {
+      "type": "string"
+    },
+    "disprice": {
+      "type": "string"
+    }
+  }
+}

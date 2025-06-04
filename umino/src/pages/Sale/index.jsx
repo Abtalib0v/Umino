@@ -1,8 +1,14 @@
 import React from 'react'
+import AboutSection from '../../sections/AboutSection'
+import SaleCard from '../../shared/SaleCard'
 
 const SalePage = () => {
   return (
-    <div>SalePage</div>
+    <div>
+      <SaleCard/>
+      <AboutSection/>
+      </div>
+
   )
 }
 
