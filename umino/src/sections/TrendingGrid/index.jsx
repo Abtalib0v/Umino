@@ -22,7 +22,7 @@ const TrendingGrid = () => {
           />
         </div>
         <div className="grid col-span-6">
-          <div className="">
+          <div>
             <DefaultCard />
           </div>
         </div>

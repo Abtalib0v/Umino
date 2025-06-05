@@ -1,21 +1,22 @@
-.about{
+.about {
     border: solid transparent;
     border-width: 5px;
     content: "";
     height: 0;
     position: absolute;
     width: 0;
-    top:35%;
-    left:100%;
+    top: 35%;
+    left: 100%;
     margin-left: 0;
-    transform:rotate(-90deg) translateY(50%) translateX(-50%) translateZ(0);
+    transform: rotate(-90deg) translateY(50%) translateX(-50%) translateZ(0);
     transform-origin: 0;
     border-top-color: #111;
 }
-.modal{
-    position: absolute;
-    transform: translate(-50%,-50%);
-    top: 50%;
-  left: 50%;
-    
-}
+
+// .modal {
+//     position: absolute;
+//     transform: translate(-50%, -50%);
+//     top: 50%;
+//     left: 50%;
+
+// }

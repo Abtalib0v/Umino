@@ -51,82 +51,78 @@ export default function BasicTabs() {
           width: "100%",
         }}
       >
-        <Box sx={{ display: "flex", justifyContent: "center", border: "none",width:'100%' }}>
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            border: "none",
+            width: "100%",
+          }}
+        >
           <Tabs
             value={value}
             onChange={handleChange}
             variant="scrollable"
-  scrollButtons="auto"
-   allowScrollButtonsMobile
+            scrollButtons="auto"
+            allowScrollButtonsMobile
             aria-label="basic tabs example"
-            
-            
-            
             sx={{
               "& .MuiTabs-indicator": {
                 display: "none",
-
               },
               "& .MuiTab-root": {
-      fontFamily: "jost",
-      fontSize:'13px',
-      lineHeight:'25px',
-      color: "#111111",
-      padding: "9.5px 20px",
-      minWidth: "0px",
-      minHeight: "0px",
-      maxWidth:"500px",
-      borderRadius: "50px",
-      transition: "background-color 0.3s ease",
-      display: "grid",
-          gridTemplateColumns: {
-            xs: "repeat(1, 1fr)", // Mobilde 2 sütun
-            sm: "repeat(2, 1fr)", // Tablette 3 sütun
-            md: "repeat(1, 1fr)", // Büyük ekranda 5 sütun
-          },
-      
-    },
-    "& .Mui-selected": {
-      backgroundColor: "#f5f5f5",
-    },
+                fontFamily: "jost",
+                fontSize: "13px",
+                lineHeight: "25px",
+                color: "#111111",
+                padding: "9.5px 20px",
+                minWidth: "0px",
+                minHeight: "0px",
+                maxWidth: "500px",
+                borderRadius: "50px",
+                transition: "background-color 0.3s ease",
+                display: "grid",
+                gridTemplateColumns: {
+                  xs: "repeat(1, 1fr)", // Mobilde 2 sütun
+                  sm: "repeat(2, 1fr)", // Tablette 3 sütun
+                  md: "repeat(1, 1fr)", // Büyük ekranda 5 sütun
+                },
+              },
+              "& .Mui-selected": {
+                backgroundColor: "#f5f5f5",
+              },
             }}
           >
-            <Tab disableRipple  label="ALL" {...a11yProps(0)} />
-            <Tab disableRipple  label="LIGHTING" {...a11yProps(1)} />
-            <Tab disableRipple  label="OURDOOR" {...a11yProps(2)} />
-            <Tab disableRipple  label="DECOR" {...a11yProps(3)} />
-            <Tab disableRipple  label="ACCESSORIES" {...a11yProps(4)} />
-
+            <Tab disableRipple label="ALL" {...a11yProps(0)} />
+            <Tab disableRipple label="LIGHTING" {...a11yProps(1)} />
+            <Tab disableRipple label="OURDOOR" {...a11yProps(2)} />
+            <Tab disableRipple label="DECOR" {...a11yProps(3)} />
+            <Tab disableRipple label="ACCESSORIES" {...a11yProps(4)} />
           </Tabs>
         </Box>
-        <CustomTabPanel value={value} index={0} style={{width:"100%"}}>
+        <CustomTabPanel value={value} index={0} style={{ width: "100%" }}>
           <div className="container mx-auto px-[55px] py-[21px] flex justify-between font-[jost]">
-                      <CardSlider/>
-
+            <CardSlider />
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={1}>
           <div className="container mx-auto px-[55px] py-[21px] flex justify-between font-[jost]">
-                      <CardSlider/>
-
+            <CardSlider />
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={2}>
           <div className="container mx-auto px-[55px] py-[21px] flex justify-between font-[jost]">
-                      <CardSlider/>
-
+            <CardSlider />
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={3}>
           <div className="container mx-auto px-[55px] py-[21px] flex justify-between font-[jost]">
-                      <CardSlider/>
-
+            <CardSlider />
           </div>
         </CustomTabPanel>
         <CustomTabPanel value={value} index={4}>
-         <div className="container mx-auto px-[55px] py-[21px] flex justify-between font-[jost]">
-                      <CardSlider/>
-
+          <div className="container mx-auto px-[55px] py-[21px] flex justify-between font-[jost]">
+            <CardSlider />
           </div>
         </CustomTabPanel>
       </Box>

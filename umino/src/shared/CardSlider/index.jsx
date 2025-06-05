@@ -15,11 +15,13 @@ export default function CardSlider() {
   console.log(data);
   return (
     <Swiper
-    navigation={true} modules={[Navigation]}
+      navigation={true}
+      modules={[Navigation]}
       spaceBetween={20}
+      style={{ width: "100%" }}
       slidesPerView={"auto"}
       autoHeight={true}
-    //   loop= {true}
+      // loop= {true}
       breakpoints={{
         320: {
           slidesPerView: 1,
@@ -44,19 +46,17 @@ export default function CardSlider() {
       }}
     >
       {" "}
-      
-        {data?.data.map((item,idx) => (
-          <SwiperSlide key={idx}>
-            <Cards
-              image={`http://localhost:1337${item.image.url}`}
-              hovimages={`http://localhost:1337${item.hovimages.url}`}
-              text={item?.text}
-              price={item?.price}
-              disprice={item?.disprice}
-            />
-          </SwiperSlide>
-        ))}
-      
+      {data?.data.map((item, idx) => (
+        <SwiperSlide key={idx}>
+          <Cards
+            image={`http://localhost:1337${item.image.url}`}
+            hovimages={`http://localhost:1337${item.hovimages.url}`}
+            text={item?.text}
+            price={item?.price}
+            disprice={item?.disprice}
+          />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
